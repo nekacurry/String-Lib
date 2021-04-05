@@ -52,7 +52,17 @@ function snakeCase(str){
   return kebobCase(str, "_")
 }
 
-// CHALLENGE 7 -
+// CHALLENGE 7 - Lowercases the first character of the first word, uppercases the first character of all other words, removes all spaces
+function camelCase(str) {
+  const words = str.split(' ')
+  const camelWords = words.map((word, i) => {
+    if (i === 0) {
+      return word.toLowerCase()
+    }
+    return capitalize(word)
+  })
+  return camelWords.join('')
+}
 
 // CHALLENGE 8 -
 
@@ -61,10 +71,10 @@ function snakeCase(str){
 // CHALLENGE 10 -
 
 // CONSOLE LOG TESTS
-console.log(capitalize("hello world!"))
-console.log(allCaps("hello world!"))
-console.log(capitalizeWords("hello world! how are you?"))
-console.log(capitalizeWords("it's time to duel"))
-console.log(removeExtraSpaces('   Hello    world!   '))
-console.log(kebobCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     '))
-console.log(snakeCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     '))
+console.log(capitalize("hello world!")) // 1
+console.log(allCaps("hello world!")) // 2
+console.log(capitalizeWords("it's time to duel")) // 3
+console.log(removeExtraSpaces('   Hello    world!   ')) // 4
+console.log(kebobCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     ')) // 5 
+console.log(snakeCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     ')) // 6
+console.log(camelCase('Hello world foo bar')) // 7
