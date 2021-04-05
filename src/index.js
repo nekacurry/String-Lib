@@ -86,7 +86,20 @@ function makeHashTag(str) {
   return hashTags
 }
 
-// CHALLENGE 10 -
+// CHALLENGE 10 - Returns true if the given string is empty or contains only whitespace
+function isEmpty(str) {
+  let empty = true
+  const words = str.trim().split('')
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] != (' ' || '\n' || '\r' || '\t')) {
+      empty = false
+    } 
+    else {
+      empty = true
+    }
+  }
+  return empty
+}
 
 // CONSOLE LOG TESTS
 console.log(capitalize("hello world!")) // 1
@@ -98,3 +111,4 @@ console.log(snakeCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 7
 console.log(camelCase('Hello world foo bar')) // 7
 console.log(shift('Hello World')) // 8
 console.log(makeHashTag('Amazing bongo drums for sale')) // 9
+console.log(isEmpty('     \n            '))
