@@ -1,6 +1,6 @@
 {
   "name": "anneka-string-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library of string manipulation functions",
   "main": "index.js",
   "scripts": {
