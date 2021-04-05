@@ -6,14 +6,12 @@ function capitalize(str) {
   return first + rest
 }
 
-console.log(capitalize("hello world!"))
 
 // CHALLENGE 2 - Capitalize entire string
 function allCaps(str) {
   return str.toUpperCase()
 }
 
-console.log(allCaps("hello world!"))
 
 // CHALLENGE 3 - Capitalize first letter of each word
 function capitalizeWords(str) {
@@ -22,10 +20,13 @@ function capitalizeWords(str) {
   return upperWords.join(' ')
 }
 
-console.log(capitalizeWords("hello world! how are you?"))
-console.log(capitalizeWords("it's time to duel"))
 
-// CHALLENGE 4 -
+// CHALLENGE 4 - Remove extra spaces
+function removeExtraSpaces(str) {
+  const chars = str.split(' ')
+  const filtered = chars.filter( word => word !== '')
+  return filtered.join(' ')
+}
 
 // CHALLENGE 5 -
 
@@ -38,3 +39,10 @@ console.log(capitalizeWords("it's time to duel"))
 // CHALLENGE 9 -
 
 // CHALLENGE 10 -
+
+// CONSOLE LOG TESTS
+console.log(capitalize("hello world!"))
+console.log(allCaps("hello world!"))
+console.log(capitalizeWords("hello world! how are you?"))
+console.log(capitalizeWords("it's time to duel"))
+console.log(removeExtraSpaces('   Hello    world!   '))
