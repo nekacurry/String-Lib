@@ -1,0 +1,19 @@
+{
+  "name": "anneka-string-lib",
+  "version": "1.0.0",
+  "description": "library of string manipulation functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekacurry/String-Lib.git"
+  },
+  "author": "anneka curry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nekacurry/String-Lib/issues"
+  },
+  "homepage": "https://github.com/nekacurry/String-Lib#readme"
+}

@@ -112,3 +112,16 @@ console.log(camelCase('Hello world foo bar')) // 7
 console.log(shift('Hello World')) // 8
 console.log(makeHashTag('Amazing bongo drums for sale')) // 9
 console.log(isEmpty('     \n            '))
+
+module.exports = {
+  capitalize,
+  allCaps,
+  capitalizeWords,
+  removeExtraSpaces,
+  kebobCase,
+  snakeCase,
+  camelCase,
+  shift,
+  makeHashTag,
+  isEmpty
+}
