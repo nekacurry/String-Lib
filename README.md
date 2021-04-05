@@ -1,7 +1,7 @@
 # String-Lib
  
 ## Description
-Library of string manipulation functions for FEW 2.1
+npm library of string manipulation functions for FEW 2.1
 
 ## Functions
 ```javascript
