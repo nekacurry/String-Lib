@@ -73,7 +73,17 @@ function shift(str) {
 
 // CHALLENGE 9 - Convert the given string to a hash tag
 function makeHashTag(str) {
-  
+  const words = removeExtraSpaces(str).split(' ')
+  const hashTags = []
+  if (words.length > 3) {
+    words.sort((a, b) => {
+      b.length - a.length
+    })
+    for (var i = 0; i < 3; i++) {
+      hashTags.push('#' + capitalize(words[i]))
+    }
+  }
+  return hashTags
 }
 
 // CHALLENGE 10 -
@@ -87,3 +97,4 @@ console.log(kebobCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 7
 console.log(snakeCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     ')) // 6
 console.log(camelCase('Hello world foo bar')) // 7
 console.log(shift('Hello World')) // 8
+console.log(makeHashTag('Amazing bongo drums for sale')) // 9
