@@ -64,9 +64,17 @@ function camelCase(str) {
   return camelWords.join('')
 }
 
-// CHALLENGE 8 -
+// CHALLENGE 8 - Take the first character of a string and move to the end of a string
+function shift(str) {
+  const slice = str.slice(1)
+  const first = str[0]
+  return slice + first
+}
 
-// CHALLENGE 9 -
+// CHALLENGE 9 - Convert the given string to a hash tag
+function makeHashTag(str) {
+  
+}
 
 // CHALLENGE 10 -
 
@@ -78,3 +86,4 @@ console.log(removeExtraSpaces('   Hello    world!   ')) // 4
 console.log(kebobCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     ')) // 5 
 console.log(snakeCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     ')) // 6
 console.log(camelCase('Hello world foo bar')) // 7
+console.log(shift('Hello World')) // 8
