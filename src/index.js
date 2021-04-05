@@ -28,7 +28,24 @@ function removeExtraSpaces(str) {
   return filtered.join(' ')
 }
 
-// CHALLENGE 5 -
+// CHALLENGE 5 - Kebob Case
+function kebobCase(str) {
+  const lowerStr = str.toLowerCase()
+  const chars = lowerStr.split('')
+  const filter = chars.filter( (c) => {
+    const code = c.charCodeAt(0)
+    if (code > 96 && code < 123) { // keep letters
+      return true
+    } else if (code > 47 && code < 58) { // keep numbers
+      return true
+    } else if (code === 32 || code === 45) { // keep space and hypen
+      return true
+    }
+    return false
+  })
+  const spaceFilter = removeExtraSpaces(filter.join(''))
+  return spaceFilter.split(' ').join('-')
+}
 
 // CHALLENGE 6 -
 
@@ -46,3 +63,4 @@ console.log(allCaps("hello world!"))
 console.log(capitalizeWords("hello world! how are you?"))
 console.log(capitalizeWords("it's time to duel"))
 console.log(removeExtraSpaces('   Hello    world!   '))
+console.log(kebobCase('     Hello World!!!    a-hypenated-word    1, 3, 5, and 77     '))
