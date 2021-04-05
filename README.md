@@ -13,7 +13,7 @@ capitalizeWords(str) // Capitalize first letter of each word
 
 removeExtraSpace(str) // Remove extra spaces
 
-kebabCase(str, sep) // Removes extra spaces and replaces them with a hyphen, makes characters lowercase
+kebabCase(str, sep = '-') // Removes extra spaces and replaces them with a hyphen (or given separator), makes characters lowercase
 
 snakeCase(str) // Removes extra spaces and replaces them with an underscore, makes all characters lowercase
 
