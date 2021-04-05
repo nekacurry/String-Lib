@@ -1,5 +1,6 @@
 # String-Lib 
-![npm bundle size](https://img.shields.io/anneka498/min/anneka-string-lib)
+![npm](https://img.shields.io/npm/v/anneka-string-lib)
+![npm bundle size](https://img.shields.io/bundlephobia/min/anneka-string-lib)
  
 ## Description
 npm library of string manipulation functions for FEW 2.1
