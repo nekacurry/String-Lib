@@ -70,8 +70,13 @@ function camelCase(str) {
 
 // CHALLENGE 8 - Take the first character of a string and move to the end of a string
 function shift(str) {
-  const slice = str.slice(1)
-  const first = str[0]
+  if (str != '') {
+    var slice = str.slice(1)
+    var first = str[0]
+  } else {
+    return ''
+  }
+  
   return slice + first
 }
 
