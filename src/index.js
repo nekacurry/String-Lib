@@ -1,8 +1,12 @@
 
 // CHALLENGE 1 - Capitalize first letter of string
 function capitalize(str) {
-  var first = str[0].toUpperCase()
-  var rest = str.slice(1)
+  if (str != ''){
+    var first = str[0].toUpperCase()
+    var rest = str.slice(1)
+  } else {
+    return ''
+  }
   return first + rest
 }
 
