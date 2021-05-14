@@ -1,4 +1,7 @@
-# String-Lib ![npm](https://img.shields.io/npm/v/anneka-string-lib)
+# String-Lib 
+![npm](https://img.shields.io/npm/v/anneka-string-lib)
+[![Coverage Status](https://coveralls.io/repos/github/nekacurry/String-Lib/badge.svg?branch=main)](https://coveralls.io/github/nekacurry/String-Lib?branch=main)
+[![Build Status](https://travis-ci.com/nekacurry/String-Lib.svg?branch=main)](https://travis-ci.com/nekacurry/String-Lib)
  
 ## Description
 npm library of string manipulation functions for FEW 2.1
